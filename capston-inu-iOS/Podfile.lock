@@ -7,6 +7,7 @@ PODS:
   - AppAuth/ExternalUserAgent (1.6.0):
     - AppAuth/Core
   - Differentiator (5.0.0)
+  - FloatingPanel (2.6.1)
   - GoogleSignIn (7.0.0):
     - AppAuth (~> 1.5)
     - GTMAppAuth (< 3.0, >= 1.3)
@@ -37,6 +38,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - FloatingPanel
   - GoogleSignIn
   - Kingfisher
   - ReactorKit
@@ -51,6 +53,7 @@ SPEC REPOS:
     - Alamofire
     - AppAuth
     - Differentiator
+    - FloatingPanel
     - GoogleSignIn
     - GTMAppAuth
     - GTMSessionFetcher
@@ -68,6 +71,7 @@ SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   AppAuth: 8fca6b5563a5baef2c04bee27538025e4ceb2add
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  FloatingPanel: de6bb891912ede28da7b1140f7b583c474fec28a
   GoogleSignIn: b232380cf495a429b8095d3178a8d5855b42e842
   GTMAppAuth: 99fb010047ba3973b7026e45393f51f27ab965ae
   GTMSessionFetcher: c9e714f7eec91a55641e2bab9f45fd83a219b882
@@ -81,6 +85,6 @@ SPEC CHECKSUMS:
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: a43bd1dbc80b6e50fbaca9dad2582a3953b6ae79
+PODFILE CHECKSUM: 29c56aa2f10885749f073b03e4c381eaf70ca86d
 
 COCOAPODS: 1.11.3
