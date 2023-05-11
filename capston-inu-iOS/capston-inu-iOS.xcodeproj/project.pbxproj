@@ -27,6 +27,11 @@
 		2C6E44F32A0CE993009F2109 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E44F22A0CE993009F2109 /* MainViewController.swift */; };
 		2C6E44F52A0D0998009F2109 /* TripListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E44F42A0D0998009F2109 /* TripListViewController.swift */; };
 		2C6E44F82A0D09B1009F2109 /* MainReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E44F72A0D09B1009F2109 /* MainReactor.swift */; };
+		2C6E44FA2A0D1692009F2109 /* TripListReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E44F92A0D1692009F2109 /* TripListReactor.swift */; };
+		2C6E44FC2A0D16CB009F2109 /* TripSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E44FB2A0D16CB009F2109 /* TripSection.swift */; };
+		2C6E44FF2A0D17AC009F2109 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E44FE2A0D17AC009F2109 /* TripTableViewCell.swift */; };
+		2C6E45012A0D1F10009F2109 /* TripDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E45002A0D1F10009F2109 /* TripDetailViewController.swift */; };
+		2C6E45052A0D28E6009F2109 /* CustomFloatingPanelLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E45042A0D28E6009F2109 /* CustomFloatingPanelLayout.swift */; };
 		4E1213750F10A6C80E52F182 /* Pods_capston_inu_iOS_capston_inu_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95006FF6B8FA00D2348591D /* Pods_capston_inu_iOS_capston_inu_iOSUITests.framework */; };
 		4FB2793BF6E5F2D00831D4F2 /* Pods_capston_inu_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FD399630B925BDF0D76209 /* Pods_capston_inu_iOS.framework */; };
 		CD30B7BC4C24B476D3C0C2E7 /* Pods_capston_inu_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB835BABB49B7C8907AFACB /* Pods_capston_inu_iOSTests.framework */; };
@@ -76,6 +81,11 @@
 		2C6E44F22A0CE993009F2109 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2C6E44F42A0D0998009F2109 /* TripListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListViewController.swift; sourceTree = "<group>"; };
 		2C6E44F72A0D09B1009F2109 /* MainReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReactor.swift; sourceTree = "<group>"; };
+		2C6E44F92A0D1692009F2109 /* TripListReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListReactor.swift; sourceTree = "<group>"; };
+		2C6E44FB2A0D16CB009F2109 /* TripSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripSection.swift; sourceTree = "<group>"; };
+		2C6E44FE2A0D17AC009F2109 /* TripTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
+		2C6E45002A0D1F10009F2109 /* TripDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailViewController.swift; sourceTree = "<group>"; };
+		2C6E45042A0D28E6009F2109 /* CustomFloatingPanelLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFloatingPanelLayout.swift; sourceTree = "<group>"; };
 		2E666F241D14DA08815F5180 /* Pods-capston-inu-iOS-capston-inu-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capston-inu-iOS-capston-inu-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-capston-inu-iOS-capston-inu-iOSUITests/Pods-capston-inu-iOS-capston-inu-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3FB835BABB49B7C8907AFACB /* Pods_capston_inu_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_capston_inu_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FD399630B925BDF0D76209 /* Pods_capston_inu_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_capston_inu_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -258,8 +268,11 @@
 		2C6E44E82A0CE94E009F2109 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				2C6E45032A0D28D2009F2109 /* Model */,
+				2C6E44FD2A0D1797009F2109 /* View */,
 				2C6E44F62A0D09A5009F2109 /* Reactor */,
 				2C6E44EB2A0CE965009F2109 /* ViewController */,
+				2C6E44FB2A0D16CB009F2109 /* TripSection.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -285,6 +298,7 @@
 			children = (
 				2C6E44F22A0CE993009F2109 /* MainViewController.swift */,
 				2C6E44F42A0D0998009F2109 /* TripListViewController.swift */,
+				2C6E45002A0D1F10009F2109 /* TripDetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -309,8 +323,25 @@
 			isa = PBXGroup;
 			children = (
 				2C6E44F72A0D09B1009F2109 /* MainReactor.swift */,
+				2C6E44F92A0D1692009F2109 /* TripListReactor.swift */,
 			);
 			path = Reactor;
+			sourceTree = "<group>";
+		};
+		2C6E44FD2A0D1797009F2109 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C6E44FE2A0D17AC009F2109 /* TripTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C6E45032A0D28D2009F2109 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C6E45042A0D28E6009F2109 /* CustomFloatingPanelLayout.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		48442E00F12A41223D32BFCC /* Pods */ = {
@@ -585,6 +616,11 @@
 				2C6E449E2A0CD330009F2109 /* AppDelegate.swift in Sources */,
 				2C6E44E72A0CE7B5009F2109 /* UITabBarItem++Extenstions.swift in Sources */,
 				2C6E44F82A0D09B1009F2109 /* MainReactor.swift in Sources */,
+				2C6E45052A0D28E6009F2109 /* CustomFloatingPanelLayout.swift in Sources */,
+				2C6E44FC2A0D16CB009F2109 /* TripSection.swift in Sources */,
+				2C6E45012A0D1F10009F2109 /* TripDetailViewController.swift in Sources */,
+				2C6E44FF2A0D17AC009F2109 /* TripTableViewCell.swift in Sources */,
+				2C6E44FA2A0D1692009F2109 /* TripListReactor.swift in Sources */,
 				2C6E44A02A0CD330009F2109 /* SceneDelegate.swift in Sources */,
 				2C6E44E52A0CE6C0009F2109 /* AppTabBarViewController.swift in Sources */,
 				2C6E44EF2A0CE97B009F2109 /* PhotoViewController.swift in Sources */,

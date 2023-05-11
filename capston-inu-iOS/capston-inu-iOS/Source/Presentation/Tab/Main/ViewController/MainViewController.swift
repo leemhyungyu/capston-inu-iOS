@@ -11,6 +11,7 @@ import MapKit
 import RxSwift
 import RxCocoa
 import ReactorKit
+import FloatingPanel
 
 class MainViewController: UIViewController, View {
 
@@ -27,24 +28,17 @@ class MainViewController: UIViewController, View {
         return mapView
     }()
     
-    lazy var changeButton: UIButton = {
+    lazy var tripListView: FloatingPanelController = {
        
-        let button = UIButton()
+        let fpc = FloatingPanelController()
+        var tripListVC = TripListViewController()
         
-        var config = UIButton.Configuration.plain()
-        var attribute = AttributedString.init("목록 보기")
-        attribute.font = .systemFont(ofSize: 16, weight: .bold)
+        tripListVC.reactor = TripListReactor()
         
-        attribute.foregroundColor = .white
-        
-        config.titleAlignment = .center
-        config.background.backgroundColor = .systemBlue
-        config.background.cornerRadius = 20
-        config.attributedTitle = attribute
-        
-        button.configuration = config
-        
-        return button
+        fpc.set(contentViewController: tripListVC)
+        fpc.addPanel(toParent: self)
+        fpc.layout = CustomFloatingPanelLayout()
+        return fpc
     }()
     
     // MARK: - Life Cycle
@@ -52,6 +46,7 @@ class MainViewController: UIViewController, View {
         super.viewDidLoad()
         configureUI()
         bind(reactor: reactor)
+        tripListView.show()
     }
 }
 
@@ -59,42 +54,19 @@ extension MainViewController {
     
     // MARK: - bind
     func bind(reactor: MainReactor) {
-        // MARK: - action
         
-        // 목록 보기 버튼 클릭
-        changeButton.rx.tap
-            .map { Reactor.Action.didTapListButton }
-            .bind(to: reactor.action)
-            .disposed(by: disposeBag)
-        
-        // MARK: - State
-        
-        reactor.state
-            .map { $0.isPresentListVC }
-            .distinctUntilChanged()
-            .filter { $0 }
-            .map { _ in }
-            .bind(onNext: presentTripListViewController)
-            .disposed(by: disposeBag)
     }
     
     // MARK: - Configure
     func configureUI() {
         
         [   mapView,
-            changeButton
         ]   .forEach { view.addSubview($0) }
         
         mapView.snp.makeConstraints {
             $0.bottom.equalTo(view.safeAreaLayoutGuide)
             $0.top.leading.trailing.equalToSuperview()
         }
-        
-        changeButton.snp.makeConstraints {
-            $0.centerX.equalToSuperview()
-            $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(20)
-            $0.width.equalTo(160)
-            $0.height.equalTo(40)
-        }
     }
 }
+

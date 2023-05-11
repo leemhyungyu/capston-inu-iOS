@@ -25,4 +25,10 @@ extension UIViewController {
         
         self.present(tripListVC, animated: true)
     }
+    
+    func presentTripDetailViewController() {
+        let detailVC = TripDetailViewController()
+        
+        self.navigationController?.pushViewController(detailVC, animated: true)
+    }
 }
