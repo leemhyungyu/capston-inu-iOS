@@ -8,9 +8,17 @@
 import UIKit
 import SnapKit
 import MapKit
+import RxSwift
+import RxCocoa
+import ReactorKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, View {
 
+    // MARK: - Properties
+    
+    lazy var reactor = MainReactor()
+    var disposeBag = DisposeBag()
+    
     // MARK: UI Component
     
     lazy var mapView: MKMapView = {
@@ -43,10 +51,32 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        bind(reactor: reactor)
     }
 }
 
 extension MainViewController {
+    
+    // MARK: - bind
+    func bind(reactor: MainReactor) {
+        // MARK: - action
+        
+        // 목록 보기 버튼 클릭
+        changeButton.rx.tap
+            .map { Reactor.Action.didTapListButton }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        
+        // MARK: - State
+        
+        reactor.state
+            .map { $0.isPresentListVC }
+            .distinctUntilChanged()
+            .filter { $0 }
+            .map { _ in }
+            .bind(onNext: presentTripListViewController)
+            .disposed(by: disposeBag)
+    }
     
     // MARK: - Configure
     func configureUI() {
