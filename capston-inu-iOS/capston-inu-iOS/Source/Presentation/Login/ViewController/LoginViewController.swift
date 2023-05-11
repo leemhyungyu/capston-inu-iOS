@@ -42,7 +42,6 @@ extension LoginViewController {
         
         // googleLoginButton 클릭
         googleLoginButton.rx.tap
-            .do(onNext: { print("googleLoginButton - clicked")})
             .map { Reactor.Action.didTapGoogleLoginButton }
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
@@ -53,9 +52,9 @@ extension LoginViewController {
             .map { $0.goToMainVC }
             .distinctUntilChanged()
             .filter { $0 }
-            .bind(onNext: {
-                // MainVC으로 이동
-            })
+            .map { _ in }
+            .bind(onNext: goToMainViewController)
+            .disposed(by: disposeBag)
             
     }
     
