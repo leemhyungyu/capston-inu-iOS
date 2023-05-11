@@ -16,6 +16,8 @@
 		2C6E44B82A0CD332009F2109 /* capston_inu_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E44B72A0CD332009F2109 /* capston_inu_iOSTests.swift */; };
 		2C6E44C22A0CD332009F2109 /* capston_inu_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E44C12A0CD332009F2109 /* capston_inu_iOSUITests.swift */; };
 		2C6E44C42A0CD332009F2109 /* capston_inu_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E44C32A0CD332009F2109 /* capston_inu_iOSUITestsLaunchTests.swift */; };
+		2C6E44DD2A0CDD58009F2109 /* UIButton++Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E44DC2A0CDD58009F2109 /* UIButton++Extenstions.swift */; };
+		2C6E44DF2A0CDD90009F2109 /* LoginType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E44DE2A0CDD90009F2109 /* LoginType.swift */; };
 		4E1213750F10A6C80E52F182 /* Pods_capston_inu_iOS_capston_inu_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95006FF6B8FA00D2348591D /* Pods_capston_inu_iOS_capston_inu_iOSUITests.framework */; };
 		4FB2793BF6E5F2D00831D4F2 /* Pods_capston_inu_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FD399630B925BDF0D76209 /* Pods_capston_inu_iOS.framework */; };
 		CD30B7BC4C24B476D3C0C2E7 /* Pods_capston_inu_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB835BABB49B7C8907AFACB /* Pods_capston_inu_iOSTests.framework */; };
@@ -54,6 +56,8 @@
 		2C6E44BD2A0CD332009F2109 /* capston-inu-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "capston-inu-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6E44C12A0CD332009F2109 /* capston_inu_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = capston_inu_iOSUITests.swift; sourceTree = "<group>"; };
 		2C6E44C32A0CD332009F2109 /* capston_inu_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = capston_inu_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2C6E44DC2A0CDD58009F2109 /* UIButton++Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton++Extenstions.swift"; sourceTree = "<group>"; };
+		2C6E44DE2A0CDD90009F2109 /* LoginType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginType.swift; sourceTree = "<group>"; };
 		2E666F241D14DA08815F5180 /* Pods-capston-inu-iOS-capston-inu-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capston-inu-iOS-capston-inu-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-capston-inu-iOS-capston-inu-iOSUITests/Pods-capston-inu-iOS-capston-inu-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3FB835BABB49B7C8907AFACB /* Pods_capston_inu_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_capston_inu_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FD399630B925BDF0D76209 /* Pods_capston_inu_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_capston_inu_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +147,7 @@
 		2C6E44D12A0CD81E009F2109 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				2C6E44DB2A0CDD39009F2109 /* Extenstions */,
 				2C6E44D32A0CD833009F2109 /* Presentation */,
 				2C6E449D2A0CD330009F2109 /* AppDelegate.swift */,
 				2C6E449F2A0CD330009F2109 /* SceneDelegate.swift */,
@@ -212,8 +217,17 @@
 		2C6E44DA2A0CD875009F2109 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2C6E44DE2A0CDD90009F2109 /* LoginType.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2C6E44DB2A0CDD39009F2109 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				2C6E44DC2A0CDD58009F2109 /* UIButton++Extenstions.swift */,
+			);
+			path = Extenstions;
 			sourceTree = "<group>";
 		};
 		48442E00F12A41223D32BFCC /* Pods */ = {
@@ -226,7 +240,6 @@
 				19697B449C46926FBE621ABB /* Pods-capston-inu-iOSTests.debug.xcconfig */,
 				B32EC5E68E9A81CA551CBA99 /* Pods-capston-inu-iOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -479,6 +492,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C6E44A22A0CD330009F2109 /* LoginViewController.swift in Sources */,
+				2C6E44DF2A0CDD90009F2109 /* LoginType.swift in Sources */,
+				2C6E44DD2A0CDD58009F2109 /* UIButton++Extenstions.swift in Sources */,
 				2C6E44A82A0CD330009F2109 /* capston_inu_iOS.xcdatamodeld in Sources */,
 				2C6E449E2A0CD330009F2109 /* AppDelegate.swift in Sources */,
 				2C6E44A02A0CD330009F2109 /* SceneDelegate.swift in Sources */,
