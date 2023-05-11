@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2C6E449E2A0CD330009F2109 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E449D2A0CD330009F2109 /* AppDelegate.swift */; };
 		2C6E44A02A0CD330009F2109 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E449F2A0CD330009F2109 /* SceneDelegate.swift */; };
-		2C6E44A22A0CD330009F2109 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E44A12A0CD330009F2109 /* ViewController.swift */; };
+		2C6E44A22A0CD330009F2109 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E44A12A0CD330009F2109 /* LoginViewController.swift */; };
 		2C6E44A82A0CD330009F2109 /* capston_inu_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E44A62A0CD330009F2109 /* capston_inu_iOS.xcdatamodeld */; };
 		2C6E44AA2A0CD332009F2109 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6E44A92A0CD332009F2109 /* Assets.xcassets */; };
 		2C6E44AD2A0CD332009F2109 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6E44AB2A0CD332009F2109 /* LaunchScreen.storyboard */; };
@@ -39,7 +39,7 @@
 		2C6E449A2A0CD330009F2109 /* capston-inu-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "capston-inu-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6E449D2A0CD330009F2109 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C6E449F2A0CD330009F2109 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2C6E44A12A0CD330009F2109 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C6E44A12A0CD330009F2109 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2C6E44A72A0CD330009F2109 /* capston_inu_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = capston_inu_iOS.xcdatamodel; sourceTree = "<group>"; };
 		2C6E44A92A0CD332009F2109 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C6E44AC2A0CD332009F2109 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,13 +99,9 @@
 		2C6E449C2A0CD330009F2109 /* capston-inu-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				2C6E449D2A0CD330009F2109 /* AppDelegate.swift */,
-				2C6E449F2A0CD330009F2109 /* SceneDelegate.swift */,
-				2C6E44A12A0CD330009F2109 /* ViewController.swift */,
-				2C6E44A92A0CD332009F2109 /* Assets.xcassets */,
-				2C6E44AB2A0CD332009F2109 /* LaunchScreen.storyboard */,
 				2C6E44AE2A0CD332009F2109 /* Info.plist */,
-				2C6E44A62A0CD330009F2109 /* capston_inu_iOS.xcdatamodeld */,
+				2C6E44D22A0CD822009F2109 /* Resource */,
+				2C6E44D12A0CD81E009F2109 /* Source */,
 			);
 			path = "capston-inu-iOS";
 			sourceTree = "<group>";
@@ -125,6 +121,82 @@
 				2C6E44C32A0CD332009F2109 /* capston_inu_iOSUITestsLaunchTests.swift */,
 			);
 			path = "capston-inu-iOSUITests";
+			sourceTree = "<group>";
+		};
+		2C6E44D12A0CD81E009F2109 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2C6E44D32A0CD833009F2109 /* Presentation */,
+				2C6E449D2A0CD330009F2109 /* AppDelegate.swift */,
+				2C6E449F2A0CD330009F2109 /* SceneDelegate.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		2C6E44D22A0CD822009F2109 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2C6E44A92A0CD332009F2109 /* Assets.xcassets */,
+				2C6E44AB2A0CD332009F2109 /* LaunchScreen.storyboard */,
+				2C6E44A62A0CD330009F2109 /* capston_inu_iOS.xcdatamodeld */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		2C6E44D32A0CD833009F2109 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				2C6E44D62A0CD85D009F2109 /* Tab */,
+				2C6E44D42A0CD851009F2109 /* Login */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		2C6E44D42A0CD851009F2109 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2C6E44DA2A0CD875009F2109 /* Model */,
+				2C6E44D92A0CD870009F2109 /* View */,
+				2C6E44D82A0CD869009F2109 /* Reactor */,
+				2C6E44D72A0CD863009F2109 /* ViewController */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2C6E44D62A0CD85D009F2109 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		2C6E44D72A0CD863009F2109 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2C6E44A12A0CD330009F2109 /* LoginViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2C6E44D82A0CD869009F2109 /* Reactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Reactor;
+			sourceTree = "<group>";
+		};
+		2C6E44D92A0CD870009F2109 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C6E44DA2A0CD875009F2109 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C6E44A22A0CD330009F2109 /* ViewController.swift in Sources */,
+				2C6E44A22A0CD330009F2109 /* LoginViewController.swift in Sources */,
 				2C6E44A82A0CD330009F2109 /* capston_inu_iOS.xcdatamodeld in Sources */,
 				2C6E449E2A0CD330009F2109 /* AppDelegate.swift in Sources */,
 				2C6E44A02A0CD330009F2109 /* SceneDelegate.swift in Sources */,
