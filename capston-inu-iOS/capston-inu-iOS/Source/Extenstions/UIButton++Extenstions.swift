@@ -28,4 +28,20 @@ extension UIButton {
         self.backgroundColor = type.backgroundColor
         self.configuration = config
     }
+    
+    func setUpTripDetailButton(_ title: String) {
+        
+        var config = UIButton.Configuration.plain()
+        var attribute = AttributedString.init(title)
+        
+        attribute.font = .systemFont(ofSize: 16, weight: .bold)
+        attribute.foregroundColor = .black
+        
+        config.titleAlignment = .center
+        config.attributedTitle = attribute
+        config.background.strokeColor = .systemGray3
+        
+        
+        self.configuration = config
+    }
 }

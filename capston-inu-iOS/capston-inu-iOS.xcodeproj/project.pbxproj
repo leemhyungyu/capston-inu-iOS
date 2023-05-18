@@ -34,6 +34,13 @@
 		2C6E45052A0D28E6009F2109 /* CustomFloatingPanelLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E45042A0D28E6009F2109 /* CustomFloatingPanelLayout.swift */; };
 		2CE32FBE2A161CFB00BEF7A8 /* TripDetailSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE32FBD2A161CFB00BEF7A8 /* TripDetailSection.swift */; };
 		2CE32FC02A161E8D00BEF7A8 /* TripDetailReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE32FBF2A161E8D00BEF7A8 /* TripDetailReactor.swift */; };
+		2CE32FC22A1623A800BEF7A8 /* TripInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE32FC12A1623A800BEF7A8 /* TripInfoCell.swift */; };
+		2CE32FC42A1623B000BEF7A8 /* TripPeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE32FC32A1623B000BEF7A8 /* TripPeopleCell.swift */; };
+		2CE32FC62A1623B800BEF7A8 /* TripCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE32FC52A1623B800BEF7A8 /* TripCommentCell.swift */; };
+		2CE32FC82A1626E200BEF7A8 /* TripDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE32FC72A1626E200BEF7A8 /* TripDetailHeaderView.swift */; };
+		2CE32FCA2A164B4F00BEF7A8 /* TripInfoCellReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE32FC92A164B4F00BEF7A8 /* TripInfoCellReactor.swift */; };
+		2CE32FCC2A164B5E00BEF7A8 /* TripPeopleCellReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE32FCB2A164B5E00BEF7A8 /* TripPeopleCellReactor.swift */; };
+		2CE32FCE2A164B6500BEF7A8 /* TripCommentCellReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE32FCD2A164B6500BEF7A8 /* TripCommentCellReactor.swift */; };
 		4E1213750F10A6C80E52F182 /* Pods_capston_inu_iOS_capston_inu_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95006FF6B8FA00D2348591D /* Pods_capston_inu_iOS_capston_inu_iOSUITests.framework */; };
 		4FB2793BF6E5F2D00831D4F2 /* Pods_capston_inu_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FD399630B925BDF0D76209 /* Pods_capston_inu_iOS.framework */; };
 		CD30B7BC4C24B476D3C0C2E7 /* Pods_capston_inu_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB835BABB49B7C8907AFACB /* Pods_capston_inu_iOSTests.framework */; };
@@ -90,6 +97,13 @@
 		2C6E45042A0D28E6009F2109 /* CustomFloatingPanelLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFloatingPanelLayout.swift; sourceTree = "<group>"; };
 		2CE32FBD2A161CFB00BEF7A8 /* TripDetailSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailSection.swift; sourceTree = "<group>"; };
 		2CE32FBF2A161E8D00BEF7A8 /* TripDetailReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailReactor.swift; sourceTree = "<group>"; };
+		2CE32FC12A1623A800BEF7A8 /* TripInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripInfoCell.swift; sourceTree = "<group>"; };
+		2CE32FC32A1623B000BEF7A8 /* TripPeopleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripPeopleCell.swift; sourceTree = "<group>"; };
+		2CE32FC52A1623B800BEF7A8 /* TripCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCommentCell.swift; sourceTree = "<group>"; };
+		2CE32FC72A1626E200BEF7A8 /* TripDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailHeaderView.swift; sourceTree = "<group>"; };
+		2CE32FC92A164B4F00BEF7A8 /* TripInfoCellReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripInfoCellReactor.swift; sourceTree = "<group>"; };
+		2CE32FCB2A164B5E00BEF7A8 /* TripPeopleCellReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripPeopleCellReactor.swift; sourceTree = "<group>"; };
+		2CE32FCD2A164B6500BEF7A8 /* TripCommentCellReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCommentCellReactor.swift; sourceTree = "<group>"; };
 		2E666F241D14DA08815F5180 /* Pods-capston-inu-iOS-capston-inu-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capston-inu-iOS-capston-inu-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-capston-inu-iOS-capston-inu-iOSUITests/Pods-capston-inu-iOS-capston-inu-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3FB835BABB49B7C8907AFACB /* Pods_capston_inu_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_capston_inu_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FD399630B925BDF0D76209 /* Pods_capston_inu_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_capston_inu_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -418,6 +432,10 @@
 		2CE32FBA2A161BF600BEF7A8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2CE32FC12A1623A800BEF7A8 /* TripInfoCell.swift */,
+				2CE32FC32A1623B000BEF7A8 /* TripPeopleCell.swift */,
+				2CE32FC52A1623B800BEF7A8 /* TripCommentCell.swift */,
+				2CE32FC72A1626E200BEF7A8 /* TripDetailHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -426,6 +444,9 @@
 			isa = PBXGroup;
 			children = (
 				2CE32FBF2A161E8D00BEF7A8 /* TripDetailReactor.swift */,
+				2CE32FC92A164B4F00BEF7A8 /* TripInfoCellReactor.swift */,
+				2CE32FCB2A164B5E00BEF7A8 /* TripPeopleCellReactor.swift */,
+				2CE32FCD2A164B6500BEF7A8 /* TripCommentCellReactor.swift */,
 			);
 			path = Reactor;
 			sourceTree = "<group>";
@@ -702,6 +723,10 @@
 				2C6E44F12A0CE989009F2109 /* CalendarViewController.swift in Sources */,
 				2C6E44F32A0CE993009F2109 /* MainViewController.swift in Sources */,
 				2C6E44A22A0CD330009F2109 /* LoginViewController.swift in Sources */,
+				2CE32FC82A1626E200BEF7A8 /* TripDetailHeaderView.swift in Sources */,
+				2CE32FC42A1623B000BEF7A8 /* TripPeopleCell.swift in Sources */,
+				2CE32FC62A1623B800BEF7A8 /* TripCommentCell.swift in Sources */,
+				2CE32FCC2A164B5E00BEF7A8 /* TripPeopleCellReactor.swift in Sources */,
 				2C6E44E12A0CE2F7009F2109 /* LoginReactor.swift in Sources */,
 				2C6E44DF2A0CDD90009F2109 /* LoginType.swift in Sources */,
 				2C6E44DD2A0CDD58009F2109 /* UIButton++Extenstions.swift in Sources */,
@@ -714,9 +739,12 @@
 				2C6E44F82A0D09B1009F2109 /* MainReactor.swift in Sources */,
 				2C6E45052A0D28E6009F2109 /* CustomFloatingPanelLayout.swift in Sources */,
 				2C6E44FC2A0D16CB009F2109 /* TripSection.swift in Sources */,
+				2CE32FC22A1623A800BEF7A8 /* TripInfoCell.swift in Sources */,
 				2C6E45012A0D1F10009F2109 /* TripDetailViewController.swift in Sources */,
 				2C6E44FF2A0D17AC009F2109 /* TripTableViewCell.swift in Sources */,
+				2CE32FCA2A164B4F00BEF7A8 /* TripInfoCellReactor.swift in Sources */,
 				2C6E44FA2A0D1692009F2109 /* TripListReactor.swift in Sources */,
+				2CE32FCE2A164B6500BEF7A8 /* TripCommentCellReactor.swift in Sources */,
 				2C6E44A02A0CD330009F2109 /* SceneDelegate.swift in Sources */,
 				2C6E44E52A0CE6C0009F2109 /* AppTabBarViewController.swift in Sources */,
 				2C6E44EF2A0CE97B009F2109 /* PhotoViewController.swift in Sources */,
