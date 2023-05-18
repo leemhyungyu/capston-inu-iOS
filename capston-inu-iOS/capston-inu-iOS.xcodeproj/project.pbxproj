@@ -32,6 +32,7 @@
 		2C6E44FF2A0D17AC009F2109 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E44FE2A0D17AC009F2109 /* TripTableViewCell.swift */; };
 		2C6E45012A0D1F10009F2109 /* TripDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E45002A0D1F10009F2109 /* TripDetailViewController.swift */; };
 		2C6E45052A0D28E6009F2109 /* CustomFloatingPanelLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E45042A0D28E6009F2109 /* CustomFloatingPanelLayout.swift */; };
+		2CE32FBE2A161CFB00BEF7A8 /* TripDetailSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE32FBD2A161CFB00BEF7A8 /* TripDetailSection.swift */; };
 		4E1213750F10A6C80E52F182 /* Pods_capston_inu_iOS_capston_inu_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95006FF6B8FA00D2348591D /* Pods_capston_inu_iOS_capston_inu_iOSUITests.framework */; };
 		4FB2793BF6E5F2D00831D4F2 /* Pods_capston_inu_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FD399630B925BDF0D76209 /* Pods_capston_inu_iOS.framework */; };
 		CD30B7BC4C24B476D3C0C2E7 /* Pods_capston_inu_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB835BABB49B7C8907AFACB /* Pods_capston_inu_iOSTests.framework */; };
@@ -86,6 +87,7 @@
 		2C6E44FE2A0D17AC009F2109 /* TripTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
 		2C6E45002A0D1F10009F2109 /* TripDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailViewController.swift; sourceTree = "<group>"; };
 		2C6E45042A0D28E6009F2109 /* CustomFloatingPanelLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFloatingPanelLayout.swift; sourceTree = "<group>"; };
+		2CE32FBD2A161CFB00BEF7A8 /* TripDetailSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailSection.swift; sourceTree = "<group>"; };
 		2E666F241D14DA08815F5180 /* Pods-capston-inu-iOS-capston-inu-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capston-inu-iOS-capston-inu-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-capston-inu-iOS-capston-inu-iOSUITests/Pods-capston-inu-iOS-capston-inu-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3FB835BABB49B7C8907AFACB /* Pods_capston_inu_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_capston_inu_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FD399630B925BDF0D76209 /* Pods_capston_inu_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_capston_inu_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -428,6 +430,7 @@
 		2CE32FBC2A161C0000BEF7A8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2CE32FBD2A161CFB00BEF7A8 /* TripDetailSection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -699,6 +702,7 @@
 				2C6E44E12A0CE2F7009F2109 /* LoginReactor.swift in Sources */,
 				2C6E44DF2A0CDD90009F2109 /* LoginType.swift in Sources */,
 				2C6E44DD2A0CDD58009F2109 /* UIButton++Extenstions.swift in Sources */,
+				2CE32FBE2A161CFB00BEF7A8 /* TripDetailSection.swift in Sources */,
 				2C6E44A82A0CD330009F2109 /* capston_inu_iOS.xcdatamodeld in Sources */,
 				2C6E44E32A0CE601009F2109 /* UIViewController++Extenstions.swift in Sources */,
 				2C6E449E2A0CD330009F2109 /* AppDelegate.swift in Sources */,
