@@ -18,17 +18,10 @@ extension UIViewController {
         view.window?.rootViewController?.dismiss(animated: false)
     }
     
-    func presentTripListViewController() {
-        let tripListVC = TripListViewController()
-        
-        tripListVC.modalPresentationStyle = .pageSheet
-        
-        self.present(tripListVC, animated: true)
-    }
-    
     func presentTripDetailViewController() {
         let detailVC = TripDetailViewController()
         
+        detailVC.reactor = TripDetailReactor()
         self.navigationController?.pushViewController(detailVC, animated: true)
     }
 }

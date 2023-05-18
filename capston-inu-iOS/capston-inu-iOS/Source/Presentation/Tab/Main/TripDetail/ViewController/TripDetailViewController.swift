@@ -6,19 +6,36 @@
 //
 
 import UIKit
+import SnapKit
+import RxSwift
+import RxCocoa
+import ReactorKit
 
-class TripDetailViewController: UIViewController {
+class TripDetailViewController: UIViewController, View {
 
+    typealias Reactor = TripDetailReactor
+    var disposeBag = DisposeBag()
+    
     // MARK: - UI Component
     
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
     }
     
     deinit {
         print("TripDetailViewController - deinit")
+    }
+}
+
+extension TripDetailViewController {
+    
+    // MARK: - bind
+    
+    func bind(reactor: TripDetailReactor) {
+        // MARK: - Action
+        
+        // MARK: - State
     }
 }
