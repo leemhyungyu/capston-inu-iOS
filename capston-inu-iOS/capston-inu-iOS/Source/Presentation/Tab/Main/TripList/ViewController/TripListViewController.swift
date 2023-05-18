@@ -44,6 +44,10 @@ class TripListViewController: UIViewController, View {
         super.viewDidLoad()
         configureUI()
     }
+    
+    deinit {
+        print("TripListViewController - deinit")
+    }
 }
 
 extension TripListViewController {
@@ -106,10 +110,11 @@ extension TripListViewController {
         
         dataSource = RxTableViewSectionedReloadDataSource(configureCell: { _, tableView, indexPath, item in
             switch item {
-            case .item(_):
+            case .item(let list):
                 
                 guard let cell = tableView.dequeueReusableCell(withIdentifier: TripTableViewCell.identifier, for: indexPath) as? TripTableViewCell else { return UITableViewCell() }
                 
+                cell.updateCell(list)
                 return cell
             }
         })

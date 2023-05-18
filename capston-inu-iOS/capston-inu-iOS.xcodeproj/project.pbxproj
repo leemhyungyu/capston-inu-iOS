@@ -268,11 +268,9 @@
 		2C6E44E82A0CE94E009F2109 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				2C6E45032A0D28D2009F2109 /* Model */,
-				2C6E44FD2A0D1797009F2109 /* View */,
-				2C6E44F62A0D09A5009F2109 /* Reactor */,
-				2C6E44EB2A0CE965009F2109 /* ViewController */,
-				2C6E44FB2A0D16CB009F2109 /* TripSection.swift */,
+				2CE32FB42A161BC300BEF7A8 /* TripDetail */,
+				2CE32FB32A161BBB00BEF7A8 /* TripList */,
+				2CE32FB22A161BA400BEF7A8 /* Map */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -297,8 +295,6 @@
 			isa = PBXGroup;
 			children = (
 				2C6E44F22A0CE993009F2109 /* MainViewController.swift */,
-				2C6E44F42A0D0998009F2109 /* TripListViewController.swift */,
-				2C6E45002A0D1F10009F2109 /* TripDetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -323,7 +319,6 @@
 			isa = PBXGroup;
 			children = (
 				2C6E44F72A0D09B1009F2109 /* MainReactor.swift */,
-				2C6E44F92A0D1692009F2109 /* TripListReactor.swift */,
 			);
 			path = Reactor;
 			sourceTree = "<group>";
@@ -331,7 +326,6 @@
 		2C6E44FD2A0D1797009F2109 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2C6E44FE2A0D17AC009F2109 /* TripTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -340,6 +334,100 @@
 			isa = PBXGroup;
 			children = (
 				2C6E45042A0D28E6009F2109 /* CustomFloatingPanelLayout.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2CE32FB22A161BA400BEF7A8 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				2C6E45032A0D28D2009F2109 /* Model */,
+				2C6E44FD2A0D1797009F2109 /* View */,
+				2C6E44F62A0D09A5009F2109 /* Reactor */,
+				2C6E44EB2A0CE965009F2109 /* ViewController */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		2CE32FB32A161BBB00BEF7A8 /* TripList */ = {
+			isa = PBXGroup;
+			children = (
+				2CE32FB82A161BED00BEF7A8 /* Model */,
+				2CE32FB72A161BE700BEF7A8 /* Reactor */,
+				2CE32FB62A161BE300BEF7A8 /* View */,
+				2CE32FB52A161BDD00BEF7A8 /* ViewController */,
+			);
+			path = TripList;
+			sourceTree = "<group>";
+		};
+		2CE32FB42A161BC300BEF7A8 /* TripDetail */ = {
+			isa = PBXGroup;
+			children = (
+				2CE32FBC2A161C0000BEF7A8 /* Model */,
+				2CE32FBB2A161BFB00BEF7A8 /* Reactor */,
+				2CE32FBA2A161BF600BEF7A8 /* View */,
+				2CE32FB92A161BF100BEF7A8 /* ViewController */,
+			);
+			path = TripDetail;
+			sourceTree = "<group>";
+		};
+		2CE32FB52A161BDD00BEF7A8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2C6E44F42A0D0998009F2109 /* TripListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2CE32FB62A161BE300BEF7A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C6E44FE2A0D17AC009F2109 /* TripTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2CE32FB72A161BE700BEF7A8 /* Reactor */ = {
+			isa = PBXGroup;
+			children = (
+				2C6E44F92A0D1692009F2109 /* TripListReactor.swift */,
+			);
+			path = Reactor;
+			sourceTree = "<group>";
+		};
+		2CE32FB82A161BED00BEF7A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C6E44FB2A0D16CB009F2109 /* TripSection.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2CE32FB92A161BF100BEF7A8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2C6E45002A0D1F10009F2109 /* TripDetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2CE32FBA2A161BF600BEF7A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2CE32FBB2A161BFB00BEF7A8 /* Reactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Reactor;
+			sourceTree = "<group>";
+		};
+		2CE32FBC2A161C0000BEF7A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
