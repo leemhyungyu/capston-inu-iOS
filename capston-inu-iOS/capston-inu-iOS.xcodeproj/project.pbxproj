@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C63A3CB2A1A462100D9D998 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C63A3CA2A1A462100D9D998 /* BaseURL.swift */; };
 		2C6E449E2A0CD330009F2109 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E449D2A0CD330009F2109 /* AppDelegate.swift */; };
 		2C6E44A02A0CD330009F2109 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E449F2A0CD330009F2109 /* SceneDelegate.swift */; };
 		2C6E44A22A0CD330009F2109 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E44A12A0CD330009F2109 /* LoginViewController.swift */; };
@@ -66,6 +67,7 @@
 /* Begin PBXFileReference section */
 		0CF86CBFC5A3D513575415B1 /* Pods-capston-inu-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capston-inu-iOS.release.xcconfig"; path = "Target Support Files/Pods-capston-inu-iOS/Pods-capston-inu-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		19697B449C46926FBE621ABB /* Pods-capston-inu-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capston-inu-iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-capston-inu-iOSTests/Pods-capston-inu-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2C63A3CA2A1A462100D9D998 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
 		2C6E449A2A0CD330009F2109 /* capston-inu-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "capston-inu-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6E449D2A0CD330009F2109 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C6E449F2A0CD330009F2109 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 		2C63A3C72A1A43E000D9D998 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				2C63A3CA2A1A462100D9D998 /* BaseURL.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -730,6 +733,7 @@
 			files = (
 				2C6E44F12A0CE989009F2109 /* CalendarViewController.swift in Sources */,
 				2C6E44F32A0CE993009F2109 /* MainViewController.swift in Sources */,
+				2C63A3CB2A1A462100D9D998 /* BaseURL.swift in Sources */,
 				2C6E44A22A0CD330009F2109 /* LoginViewController.swift in Sources */,
 				2CE32FC82A1626E200BEF7A8 /* TripDetailHeaderView.swift in Sources */,
 				2CE32FC42A1623B000BEF7A8 /* TripPeopleCell.swift in Sources */,
