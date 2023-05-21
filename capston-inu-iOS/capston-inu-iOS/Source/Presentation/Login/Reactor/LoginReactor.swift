@@ -13,10 +13,13 @@ class LoginReactor: Reactor {
     
     enum Action {
         case didTapGoogleLoginButton
+        case didCompletedLogin
     }
     
     enum Mutation {
         case goToMainVC(Bool)
+        case setGoogleLogin(Bool)
+        case setLoginState(Bool)
     }
     
     init() {
@@ -25,6 +28,7 @@ class LoginReactor: Reactor {
     
     struct State {
         var goToMainVC: Bool = false
+        var googleLogin: Bool = false
         var isLogin: Bool = false
     }
     
@@ -32,9 +36,11 @@ class LoginReactor: Reactor {
         switch action {
         case .didTapGoogleLoginButton:
             return .concat([
-                .just(.goToMainVC(true)),
-                .just(.goToMainVC(false))
+                .just(.setGoogleLogin(true)),
+                .just(.setGoogleLogin(false))
             ])
+        case .didCompletedLogin:
+            return .just(.setLoginState(true))
         }
     }
     
@@ -44,6 +50,12 @@ class LoginReactor: Reactor {
         switch mutation {
         case .goToMainVC(let isPresent):
             state.goToMainVC = isPresent
+            
+        case .setGoogleLogin(let isGoogle):
+            state.googleLogin = isGoogle
+            
+        case .setLoginState(let isLogin):
+            state.isLogin = isLogin
         }
         
         return state

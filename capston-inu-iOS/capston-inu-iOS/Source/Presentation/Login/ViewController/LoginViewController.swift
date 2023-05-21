@@ -10,6 +10,7 @@ import SnapKit
 import RxSwift
 import RxCocoa
 import ReactorKit
+import GoogleSignIn
 
 class LoginViewController: UIViewController, View {
 
@@ -55,6 +56,16 @@ extension LoginViewController {
             .map { _ in }
             .bind(onNext: goToMainViewController)
             .disposed(by: disposeBag)
+        
+        reactor.state
+            .map { $0.googleLogin }
+            .distinctUntilChanged()
+            .filter { $0 }
+            .map { _ in }
+            .bind { [weak self] in
+                self!.googleLoginButtonDidTap()
+            }
+            .disposed(by: disposeBag)
             
     }
     
@@ -68,6 +79,13 @@ extension LoginViewController {
             $0.centerY.equalToSuperview()
             $0.leading.trailing.equalToSuperview().inset(20)
             $0.height.equalTo(40)
+        }
+    }
+    
+    func googleLoginButtonDidTap() {
+        
+        GIDSignIn.sharedInstance.signIn(withPresenting: self) { result, error in
+            
         }
     }
 }
