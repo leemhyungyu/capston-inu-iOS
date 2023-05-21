@@ -14,6 +14,7 @@ target 'capston-inu-iOS' do
   pod 'Kingfisher'
   pod 'Alamofire'
   pod 'FloatingPanel'
+  pod 'GoogleSignIn'
 
   use_frameworks!
 

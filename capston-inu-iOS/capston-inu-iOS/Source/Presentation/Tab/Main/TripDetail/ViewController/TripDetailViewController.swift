@@ -106,6 +106,8 @@ extension TripDetailViewController {
     func configureUI() {
         view.addSubview(collectionView)
         
+        view.backgroundColor = .white
+        
         collectionView.snp.makeConstraints {
             $0.top.bottom.equalTo(view.safeAreaLayoutGuide)
             $0.leading.trailing.equalToSuperview()
