@@ -10,6 +10,7 @@
 		2C63A3CB2A1A462100D9D998 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C63A3CA2A1A462100D9D998 /* BaseURL.swift */; };
 		2C63A3CD2A1A4DAB00D9D998 /* ServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C63A3CC2A1A4DAB00D9D998 /* ServiceAPI.swift */; };
 		2C63A3D02A1CA9D000D9D998 /* GoogleLoginInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C63A3CF2A1CA9D000D9D998 /* GoogleLoginInfo.swift */; };
+		2C63A3D32A1CAC6800D9D998 /* keyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C63A3D22A1CAC6800D9D998 /* keyChain.swift */; };
 		2C6E449E2A0CD330009F2109 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E449D2A0CD330009F2109 /* AppDelegate.swift */; };
 		2C6E44A02A0CD330009F2109 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E449F2A0CD330009F2109 /* SceneDelegate.swift */; };
 		2C6E44A22A0CD330009F2109 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E44A12A0CD330009F2109 /* LoginViewController.swift */; };
@@ -72,6 +73,7 @@
 		2C63A3CA2A1A462100D9D998 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
 		2C63A3CC2A1A4DAB00D9D998 /* ServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAPI.swift; sourceTree = "<group>"; };
 		2C63A3CF2A1CA9D000D9D998 /* GoogleLoginInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLoginInfo.swift; sourceTree = "<group>"; };
+		2C63A3D22A1CAC6800D9D998 /* keyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyChain.swift; sourceTree = "<group>"; };
 		2C6E449A2A0CD330009F2109 /* capston-inu-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "capston-inu-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6E449D2A0CD330009F2109 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C6E449F2A0CD330009F2109 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +167,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		2C63A3D12A1CAC3300D9D998 /* keyChain */ = {
+			isa = PBXGroup;
+			children = (
+				2C63A3D22A1CAC6800D9D998 /* keyChain.swift */,
+			);
+			path = keyChain;
+			sourceTree = "<group>";
+		};
 		2C6E44912A0CD330009F2109 = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +227,7 @@
 		2C6E44D12A0CD81E009F2109 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				2C63A3D12A1CAC3300D9D998 /* keyChain */,
 				2C63A3C72A1A43E000D9D998 /* Network */,
 				2C6E44DB2A0CDD39009F2109 /* Extenstions */,
 				2C6E44D32A0CD833009F2109 /* Presentation */,
@@ -769,6 +780,7 @@
 				2C63A3CD2A1A4DAB00D9D998 /* ServiceAPI.swift in Sources */,
 				2CE32FC22A1623A800BEF7A8 /* TripInfoCell.swift in Sources */,
 				2C6E45012A0D1F10009F2109 /* TripDetailViewController.swift in Sources */,
+				2C63A3D32A1CAC6800D9D998 /* keyChain.swift in Sources */,
 				2C6E44FF2A0D17AC009F2109 /* TripTableViewCell.swift in Sources */,
 				2CE32FCA2A164B4F00BEF7A8 /* TripInfoCellReactor.swift in Sources */,
 				2C6E44FA2A0D1692009F2109 /* TripListReactor.swift in Sources */,

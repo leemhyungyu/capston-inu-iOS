@@ -83,8 +83,8 @@ extension LoginViewController {
 
             API.googleLogin(token)
                 .catch { _ in .empty()}
-                .map { _ in } // xAutoToken 가져와서 keyChain에 넣기
                 .bind { [weak self] in
+                    XAuthToken.create(xAuthToken: $0.xAuthToken)
                     self!.goToMainViewController()
                 }
                 .disposed(by: self.disposeBag)

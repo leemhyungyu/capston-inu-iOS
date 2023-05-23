@@ -34,8 +34,7 @@ public func networking<T: Decodable>(
         var reqeust = URLRequest(url: url)
         reqeust.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
-        // 임시로 "" 값 설정
-        reqeust.setValue("", forHTTPHeaderField: "X-AUTH-TOKEN")
+        reqeust.setValue(XAuthToken.read() ?? "", forHTTPHeaderField: "X-AUTH-TOKEN")
         
         reqeust.httpBody = data
         reqeust.method = method
