@@ -75,6 +75,7 @@ class TripDetailViewController: UIViewController, View {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        setNavigationTitleAndBackButton("일정 결과")
     }
     
     deinit {

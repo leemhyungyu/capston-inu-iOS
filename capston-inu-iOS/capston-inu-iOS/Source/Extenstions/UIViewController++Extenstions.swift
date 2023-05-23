@@ -9,6 +9,22 @@ import UIKit
 
 extension UIViewController {
     
+    func setNavigationTitleAndBackButton(_ title: String) {
+        self.navigationItem.title = title
+        
+        let backButton = UIBarButtonItem(
+            image: UIImage(named: "backButton"),
+            style: .done,
+            target: self,
+            action: #selector(popViewController))
+        
+        self.navigationItem.leftBarButtonItem = backButton
+    }
+    
+    @objc func popViewController() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     func goToMainViewController() {
         let tabBarController = AppTabBarViewController()
         
