@@ -17,7 +17,6 @@ class LoginReactor: Reactor {
     }
     
     enum Mutation {
-        case goToMainVC(Bool)
         case setGoogleLogin(Bool)
         case setLoginState(Bool)
     }
@@ -27,7 +26,6 @@ class LoginReactor: Reactor {
     }
     
     struct State {
-        var goToMainVC: Bool = false
         var googleLogin: Bool = false
         var isLogin: Bool = false
     }
@@ -48,9 +46,6 @@ class LoginReactor: Reactor {
         var state = state
         
         switch mutation {
-        case .goToMainVC(let isPresent):
-            state.goToMainVC = isPresent
-            
         case .setGoogleLogin(let isGoogle):
             state.googleLogin = isGoogle
             

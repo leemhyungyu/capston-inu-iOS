@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2C63A3CB2A1A462100D9D998 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C63A3CA2A1A462100D9D998 /* BaseURL.swift */; };
+		2C63A3CD2A1A4DAB00D9D998 /* ServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C63A3CC2A1A4DAB00D9D998 /* ServiceAPI.swift */; };
+		2C63A3D02A1CA9D000D9D998 /* GoogleLoginInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C63A3CF2A1CA9D000D9D998 /* GoogleLoginInfo.swift */; };
 		2C6E449E2A0CD330009F2109 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E449D2A0CD330009F2109 /* AppDelegate.swift */; };
 		2C6E44A02A0CD330009F2109 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E449F2A0CD330009F2109 /* SceneDelegate.swift */; };
 		2C6E44A22A0CD330009F2109 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E44A12A0CD330009F2109 /* LoginViewController.swift */; };
@@ -68,6 +70,8 @@
 		0CF86CBFC5A3D513575415B1 /* Pods-capston-inu-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capston-inu-iOS.release.xcconfig"; path = "Target Support Files/Pods-capston-inu-iOS/Pods-capston-inu-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		19697B449C46926FBE621ABB /* Pods-capston-inu-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capston-inu-iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-capston-inu-iOSTests/Pods-capston-inu-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2C63A3CA2A1A462100D9D998 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
+		2C63A3CC2A1A4DAB00D9D998 /* ServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAPI.swift; sourceTree = "<group>"; };
+		2C63A3CF2A1CA9D000D9D998 /* GoogleLoginInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLoginInfo.swift; sourceTree = "<group>"; };
 		2C6E449A2A0CD330009F2109 /* capston-inu-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "capston-inu-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6E449D2A0CD330009F2109 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C6E449F2A0CD330009F2109 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,9 +150,19 @@
 		2C63A3C72A1A43E000D9D998 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				2C63A3CE2A1CA9C000D9D998 /* Model */,
 				2C63A3CA2A1A462100D9D998 /* BaseURL.swift */,
+				2C63A3CC2A1A4DAB00D9D998 /* ServiceAPI.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		2C63A3CE2A1CA9C000D9D998 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C63A3CF2A1CA9D000D9D998 /* GoogleLoginInfo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		2C6E44912A0CD330009F2109 = {
@@ -749,8 +763,10 @@
 				2C6E449E2A0CD330009F2109 /* AppDelegate.swift in Sources */,
 				2C6E44E72A0CE7B5009F2109 /* UITabBarItem++Extenstions.swift in Sources */,
 				2C6E44F82A0D09B1009F2109 /* MainReactor.swift in Sources */,
+				2C63A3D02A1CA9D000D9D998 /* GoogleLoginInfo.swift in Sources */,
 				2C6E45052A0D28E6009F2109 /* CustomFloatingPanelLayout.swift in Sources */,
 				2C6E44FC2A0D16CB009F2109 /* TripSection.swift in Sources */,
+				2C63A3CD2A1A4DAB00D9D998 /* ServiceAPI.swift in Sources */,
 				2CE32FC22A1623A800BEF7A8 /* TripInfoCell.swift in Sources */,
 				2C6E45012A0D1F10009F2109 /* TripDetailViewController.swift in Sources */,
 				2C6E44FF2A0D17AC009F2109 /* TripTableViewCell.swift in Sources */,

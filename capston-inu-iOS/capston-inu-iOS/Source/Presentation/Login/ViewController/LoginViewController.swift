@@ -48,15 +48,7 @@ extension LoginViewController {
             .disposed(by: disposeBag)
         
         
-        // 일단은 로그인 버튼 클릭시 메인 VC으로 이동
-        reactor.state
-            .map { $0.goToMainVC }
-            .distinctUntilChanged()
-            .filter { $0 }
-            .map { _ in }
-            .bind(onNext: goToMainViewController)
-            .disposed(by: disposeBag)
-        
+        // google 로그인 화면으로 이동
         reactor.state
             .map { $0.googleLogin }
             .distinctUntilChanged()
@@ -85,7 +77,17 @@ extension LoginViewController {
     func googleLoginButtonDidTap() {
         
         GIDSignIn.sharedInstance.signIn(withPresenting: self) { result, error in
+            guard error == nil, let result = result else { return }
             
+            let token = result.user.accessToken.tokenString
+
+            API.googleLogin(token)
+                .catch { _ in .empty()}
+                .map { _ in } // xAutoToken 가져와서 keyChain에 넣기
+                .bind { [weak self] in
+                    self!.goToMainViewController()
+                }
+                .disposed(by: self.disposeBag)
         }
     }
 }
