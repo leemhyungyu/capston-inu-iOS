@@ -11,6 +11,8 @@
 		2C63A3CD2A1A4DAB00D9D998 /* ServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C63A3CC2A1A4DAB00D9D998 /* ServiceAPI.swift */; };
 		2C63A3D02A1CA9D000D9D998 /* GoogleLoginInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C63A3CF2A1CA9D000D9D998 /* GoogleLoginInfo.swift */; };
 		2C63A3D32A1CAC6800D9D998 /* keyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C63A3D22A1CAC6800D9D998 /* keyChain.swift */; };
+		2C63A3D52A1CC86700D9D998 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C63A3D42A1CC86700D9D998 /* CustomAnnotation.swift */; };
+		2C63A3D72A1CC89B00D9D998 /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C63A3D62A1CC89B00D9D998 /* CustomAnnotationView.swift */; };
 		2C6E449E2A0CD330009F2109 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E449D2A0CD330009F2109 /* AppDelegate.swift */; };
 		2C6E44A02A0CD330009F2109 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E449F2A0CD330009F2109 /* SceneDelegate.swift */; };
 		2C6E44A22A0CD330009F2109 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E44A12A0CD330009F2109 /* LoginViewController.swift */; };
@@ -74,6 +76,8 @@
 		2C63A3CC2A1A4DAB00D9D998 /* ServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAPI.swift; sourceTree = "<group>"; };
 		2C63A3CF2A1CA9D000D9D998 /* GoogleLoginInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLoginInfo.swift; sourceTree = "<group>"; };
 		2C63A3D22A1CAC6800D9D998 /* keyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyChain.swift; sourceTree = "<group>"; };
+		2C63A3D42A1CC86700D9D998 /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
+		2C63A3D62A1CC89B00D9D998 /* CustomAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
 		2C6E449A2A0CD330009F2109 /* capston-inu-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "capston-inu-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6E449D2A0CD330009F2109 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C6E449F2A0CD330009F2109 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -380,6 +384,7 @@
 		2C6E44FD2A0D1797009F2109 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2C63A3D62A1CC89B00D9D998 /* CustomAnnotationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -388,6 +393,7 @@
 			isa = PBXGroup;
 			children = (
 				2C6E45042A0D28E6009F2109 /* CustomFloatingPanelLayout.swift */,
+				2C63A3D42A1CC86700D9D998 /* CustomAnnotation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -757,6 +763,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C6E44F12A0CE989009F2109 /* CalendarViewController.swift in Sources */,
+				2C63A3D52A1CC86700D9D998 /* CustomAnnotation.swift in Sources */,
 				2C6E44F32A0CE993009F2109 /* MainViewController.swift in Sources */,
 				2C63A3CB2A1A462100D9D998 /* BaseURL.swift in Sources */,
 				2C6E44A22A0CD330009F2109 /* LoginViewController.swift in Sources */,
@@ -781,6 +788,7 @@
 				2CE32FC22A1623A800BEF7A8 /* TripInfoCell.swift in Sources */,
 				2C6E45012A0D1F10009F2109 /* TripDetailViewController.swift in Sources */,
 				2C63A3D32A1CAC6800D9D998 /* keyChain.swift in Sources */,
+				2C63A3D72A1CC89B00D9D998 /* CustomAnnotationView.swift in Sources */,
 				2C6E44FF2A0D17AC009F2109 /* TripTableViewCell.swift in Sources */,
 				2CE32FCA2A164B4F00BEF7A8 /* TripInfoCellReactor.swift in Sources */,
 				2C6E44FA2A0D1692009F2109 /* TripListReactor.swift in Sources */,

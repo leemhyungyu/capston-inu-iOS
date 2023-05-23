@@ -55,7 +55,7 @@ extension LoginViewController {
             .filter { $0 }
             .map { _ in }
             .bind { [weak self] in
-                self!.googleLoginButtonDidTap()
+                self!.goToMainViewController()
             }
             .disposed(by: disposeBag)
             
