@@ -44,4 +44,17 @@ extension UIButton {
         
         self.configuration = config
     }
+    
+    func makeImageButton(_ image: UIImage) -> UIButton {
+        let button: UIButton = {
+            let button = UIButton()
+            
+            button.setImage(image, for: .normal)
+            button.tintColor = .black
+            
+            return button
+        }()
+        
+        return button
+    }
 }

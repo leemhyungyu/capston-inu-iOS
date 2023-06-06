@@ -42,6 +42,7 @@
 		2CBD948B2A2F353100035252 /* CalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD948A2A2F353100035252 /* CalendarTableViewCell.swift */; };
 		2CBD948E2A2F376F00035252 /* CalendarSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD948D2A2F376F00035252 /* CalendarSection.swift */; };
 		2CBD94902A2F37C700035252 /* TripList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD948F2A2F37C700035252 /* TripList.swift */; };
+		2CBD94922A2F3EE600035252 /* UINavigationItem++Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD94912A2F3EE600035252 /* UINavigationItem++Extenstions.swift */; };
 		2CE32FBE2A161CFB00BEF7A8 /* TripDetailSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE32FBD2A161CFB00BEF7A8 /* TripDetailSection.swift */; };
 		2CE32FC02A161E8D00BEF7A8 /* TripDetailReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE32FBF2A161E8D00BEF7A8 /* TripDetailReactor.swift */; };
 		2CE32FC22A1623A800BEF7A8 /* TripInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE32FC12A1623A800BEF7A8 /* TripInfoCell.swift */; };
@@ -115,6 +116,7 @@
 		2CBD948A2A2F353100035252 /* CalendarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewCell.swift; sourceTree = "<group>"; };
 		2CBD948D2A2F376F00035252 /* CalendarSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSection.swift; sourceTree = "<group>"; };
 		2CBD948F2A2F37C700035252 /* TripList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripList.swift; sourceTree = "<group>"; };
+		2CBD94912A2F3EE600035252 /* UINavigationItem++Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationItem++Extenstions.swift"; sourceTree = "<group>"; };
 		2CE32FBD2A161CFB00BEF7A8 /* TripDetailSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailSection.swift; sourceTree = "<group>"; };
 		2CE32FBF2A161E8D00BEF7A8 /* TripDetailReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailReactor.swift; sourceTree = "<group>"; };
 		2CE32FC12A1623A800BEF7A8 /* TripInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripInfoCell.swift; sourceTree = "<group>"; };
@@ -327,6 +329,7 @@
 				2C6E44DC2A0CDD58009F2109 /* UIButton++Extenstions.swift */,
 				2C6E44E22A0CE601009F2109 /* UIViewController++Extenstions.swift */,
 				2C6E44E62A0CE7B5009F2109 /* UITabBarItem++Extenstions.swift */,
+				2CBD94912A2F3EE600035252 /* UINavigationItem++Extenstions.swift */,
 			);
 			path = Extenstions;
 			sourceTree = "<group>";
@@ -835,6 +838,7 @@
 				2CE32FCE2A164B6500BEF7A8 /* TripCommentCellReactor.swift in Sources */,
 				2C6E44A02A0CD330009F2109 /* SceneDelegate.swift in Sources */,
 				2C6E44E52A0CE6C0009F2109 /* AppTabBarViewController.swift in Sources */,
+				2CBD94922A2F3EE600035252 /* UINavigationItem++Extenstions.swift in Sources */,
 				2C6E44EF2A0CE97B009F2109 /* PhotoViewController.swift in Sources */,
 				2C6E44F52A0D0998009F2109 /* TripListViewController.swift in Sources */,
 			);

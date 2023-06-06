@@ -26,12 +26,16 @@ class CalendarViewController: UIViewController, View {
         return tableView
     }()
     
+
+    lazy var plusButton = UIButton().makeImageButton(UIImage(named: "plus")!)
+    lazy var deleteButton = UIButton().makeImageButton(UIImage(named: "delete")!)
     
     // MARK: - life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         bind(reactor: reactor)
         configureUI()
+        configureNavigationBar()
     }
 }
 
@@ -85,6 +89,16 @@ extension CalendarViewController {
                 return cell
             }
         })
+    }
+    
+    func configureNavigationBar() {
+        
+        setNavigationBarTitle("여행 일정")
+    
+        let plusButtonItem = UINavigationItem().makeImageButtonItem(plusButton)
+        let deleteButtonItem = UINavigationItem().makeImageButtonItem(deleteButton)
+        
+        self.navigationItem.rightBarButtonItems = [deleteButtonItem, plusButtonItem]
     }
 }
 

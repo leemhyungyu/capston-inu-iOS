@@ -21,6 +21,10 @@ extension UIViewController {
         self.navigationItem.leftBarButtonItem = backButton
     }
     
+    func setNavigationBarTitle(_ title: String) {
+        self.navigationItem.title = title
+    }
+    
     @objc func popViewController() {
         self.navigationController?.popViewController(animated: true)
     }
