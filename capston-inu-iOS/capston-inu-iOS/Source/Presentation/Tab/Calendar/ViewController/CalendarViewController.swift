@@ -21,8 +21,10 @@ class CalendarViewController: UIViewController, View {
     // MARK: - UI Component
     
     lazy var tableView: UITableView = {
-        let tableView = UITableView(frame: .zero, style: .plain)
+        let tableView = UITableView(frame: .null, style: .plain)
         tableView.register(CalendarTableViewCell.self, forCellReuseIdentifier: CalendarTableViewCell.identifier)
+        tableView.separatorStyle = .none
+
         return tableView
     }()
     
@@ -106,6 +108,6 @@ extension CalendarViewController {
 extension CalendarViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 100
     }
 }

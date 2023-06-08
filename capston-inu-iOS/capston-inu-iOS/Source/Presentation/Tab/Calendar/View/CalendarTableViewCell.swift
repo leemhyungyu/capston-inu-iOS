@@ -50,25 +50,25 @@ class CalendarTableViewCell: UITableViewCell {
         return label
     }()
     
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 8, left: 20, bottom: 10, right: 20))
         configureUI()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
 }
 
 extension CalendarTableViewCell {
     
     func configureUI() {
+
+        contentView.layer.borderWidth = 0.3
+        contentView.layer.cornerRadius = 30
         
         [   tripImageView,
             tripTitleLabel,
             tripStartDateLabel,
             tripEndDateLabel
-        ]   .forEach { addSubview($0) }
+        ]   .forEach { contentView.addSubview($0) }
         
         tripImageView.snp.makeConstraints {
             $0.width.height.equalTo(40)
