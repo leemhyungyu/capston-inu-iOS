@@ -24,7 +24,7 @@ class CalendarViewController: UIViewController, View {
         let tableView = UITableView(frame: .null, style: .plain)
         tableView.register(CalendarTableViewCell.self, forCellReuseIdentifier: CalendarTableViewCell.identifier)
         tableView.separatorStyle = .none
-
+        tableView.backgroundColor = .systemGray6
         return tableView
     }()
     
@@ -60,7 +60,6 @@ extension CalendarViewController {
             .map { $0.section }
             .bind(to: tableView.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
-        
     }
     
     // MAKR: - configure

@@ -14,6 +14,7 @@ class CalendarReactor: Reactor {
     
     enum Action {
         case viewDidLoad
+        case deleteItem(IndexPath)
     }
     
     enum Mutation {
@@ -32,6 +33,9 @@ class CalendarReactor: Reactor {
         switch action {
         case .viewDidLoad:
             return CalendarReactor.setUpSections()
+            
+        case .deleteItem(let indexPath):
+            return .empty()
         }
     }
     
@@ -61,9 +65,11 @@ extension CalendarReactor {
             TripList(title: "여행 제목5", startDate: "여행 시작 일자5", endDate: "여행 종료 일자5"),
             TripList(title: "여행 제목6", startDate: "여행 시작 일자6", endDate: "여행 종료 일자61")
         ]
-    
-        sections = [CalendarSection.calendarSection(data.map { CalendarSectionItem.calendarCell($0) })]
-
+        
+        data.forEach {
+            sections += [CalendarSection.calendarSection([CalendarSectionItem.calendarCell($0)])]
+        }
+        
         return .just(.setUpSection(sections))
     }
 }

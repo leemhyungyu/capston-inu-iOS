@@ -61,8 +61,12 @@ extension CalendarTableViewCell {
     
     func configureUI() {
 
-        contentView.layer.borderWidth = 0.3
-        contentView.layer.cornerRadius = 30
+        contentView.layer.cornerRadius = 15
+        contentView.backgroundColor = .white
+        backgroundColor = .systemGray6
+        contentView.layer.shadowRadius = 5
+        contentView.layer.shadowOpacity = 0.5
+        contentView.layer.shadowOffset = CGSize(width: 3, height: 3)
         
         [   tripImageView,
             tripTitleLabel,
