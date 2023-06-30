@@ -39,6 +39,7 @@
 		2C6E45012A0D1F10009F2109 /* TripDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E45002A0D1F10009F2109 /* TripDetailViewController.swift */; };
 		2C6E45052A0D28E6009F2109 /* CustomFloatingPanelLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E45042A0D28E6009F2109 /* CustomFloatingPanelLayout.swift */; };
 		2C7F2E992A4EB5220071994F /* TripSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7F2E982A4EB5220071994F /* TripSettingViewController.swift */; };
+		2C7F2E9C2A4EBB000071994F /* PlanDateVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7F2E9B2A4EBB000071994F /* PlanDateVIew.swift */; };
 		2CBD94882A2F33DE00035252 /* PlanListReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD94872A2F33DE00035252 /* PlanListReactor.swift */; };
 		2CBD948B2A2F353100035252 /* PlanListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD948A2A2F353100035252 /* PlanListTableViewCell.swift */; };
 		2CBD948E2A2F376F00035252 /* PlanListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD948D2A2F376F00035252 /* PlanListSection.swift */; };
@@ -114,6 +115,7 @@
 		2C6E45002A0D1F10009F2109 /* TripDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailViewController.swift; sourceTree = "<group>"; };
 		2C6E45042A0D28E6009F2109 /* CustomFloatingPanelLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFloatingPanelLayout.swift; sourceTree = "<group>"; };
 		2C7F2E982A4EB5220071994F /* TripSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripSettingViewController.swift; sourceTree = "<group>"; };
+		2C7F2E9B2A4EBB000071994F /* PlanDateVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDateVIew.swift; sourceTree = "<group>"; };
 		2CBD94872A2F33DE00035252 /* PlanListReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanListReactor.swift; sourceTree = "<group>"; };
 		2CBD948A2A2F353100035252 /* PlanListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanListTableViewCell.swift; sourceTree = "<group>"; };
 		2CBD948D2A2F376F00035252 /* PlanListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanListSection.swift; sourceTree = "<group>"; };
@@ -426,6 +428,7 @@
 		2C7F2E962A4EB43A0071994F /* TripSetting */ = {
 			isa = PBXGroup;
 			children = (
+				2C7F2E9A2A4EBAF50071994F /* View */,
 				2C7F2E972A4EB5090071994F /* ViewController */,
 			);
 			path = TripSetting;
@@ -437,6 +440,14 @@
 				2C7F2E982A4EB5220071994F /* TripSettingViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2C7F2E9A2A4EBAF50071994F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C7F2E9B2A4EBB000071994F /* PlanDateVIew.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		2CBD94862A2F33CD00035252 /* Reactor */ = {
@@ -839,6 +850,7 @@
 				2CE32FCC2A164B5E00BEF7A8 /* TripPeopleCellReactor.swift in Sources */,
 				2CBD94902A2F37C700035252 /* PlanList.swift in Sources */,
 				2CBD948E2A2F376F00035252 /* PlanListSection.swift in Sources */,
+				2C7F2E9C2A4EBB000071994F /* PlanDateVIew.swift in Sources */,
 				2C6E44E12A0CE2F7009F2109 /* LoginReactor.swift in Sources */,
 				2C6E44DF2A0CDD90009F2109 /* LoginType.swift in Sources */,
 				2C6E44DD2A0CDD58009F2109 /* UIButton++Extenstions.swift in Sources */,
