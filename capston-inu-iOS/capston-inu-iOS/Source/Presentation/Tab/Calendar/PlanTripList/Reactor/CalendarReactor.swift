@@ -15,14 +15,17 @@ class CalendarReactor: Reactor {
     enum Action {
         case viewDidLoad
         case deleteItem(IndexPath)
+        case didTapPlusButton
     }
     
     enum Mutation {
         case setUpSection([CalendarSection])
+        case setPresentPlanVC(Bool)
     }
     
     struct State {
         var section: [CalendarSection] = []
+        var isPresentPlanVC: Bool = false
     }
     
     init() {
@@ -36,6 +39,12 @@ class CalendarReactor: Reactor {
             
         case .deleteItem(let indexPath):
             return .empty()
+            
+        case .didTapPlusButton:
+            return .concat([
+                .just(.setPresentPlanVC(true)),
+                .just(.setPresentPlanVC(false))
+            ])
         }
     }
     
@@ -45,6 +54,9 @@ class CalendarReactor: Reactor {
         switch mutation {
         case .setUpSection(let sections):
             newState.section = sections
+            
+        case .setPresentPlanVC(let isPresent):
+            newState.isPresentPlanVC = isPresent
         }
         
         return newState

@@ -38,6 +38,7 @@
 		2C6E44FF2A0D17AC009F2109 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E44FE2A0D17AC009F2109 /* TripTableViewCell.swift */; };
 		2C6E45012A0D1F10009F2109 /* TripDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E45002A0D1F10009F2109 /* TripDetailViewController.swift */; };
 		2C6E45052A0D28E6009F2109 /* CustomFloatingPanelLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E45042A0D28E6009F2109 /* CustomFloatingPanelLayout.swift */; };
+		2C7F2E992A4EB5220071994F /* TripSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7F2E982A4EB5220071994F /* TripSettingViewController.swift */; };
 		2CBD94882A2F33DE00035252 /* CalendarReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD94872A2F33DE00035252 /* CalendarReactor.swift */; };
 		2CBD948B2A2F353100035252 /* CalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD948A2A2F353100035252 /* CalendarTableViewCell.swift */; };
 		2CBD948E2A2F376F00035252 /* CalendarSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD948D2A2F376F00035252 /* CalendarSection.swift */; };
@@ -112,6 +113,7 @@
 		2C6E44FE2A0D17AC009F2109 /* TripTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
 		2C6E45002A0D1F10009F2109 /* TripDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailViewController.swift; sourceTree = "<group>"; };
 		2C6E45042A0D28E6009F2109 /* CustomFloatingPanelLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFloatingPanelLayout.swift; sourceTree = "<group>"; };
+		2C7F2E982A4EB5220071994F /* TripSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripSettingViewController.swift; sourceTree = "<group>"; };
 		2CBD94872A2F33DE00035252 /* CalendarReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarReactor.swift; sourceTree = "<group>"; };
 		2CBD948A2A2F353100035252 /* CalendarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewCell.swift; sourceTree = "<group>"; };
 		2CBD948D2A2F376F00035252 /* CalendarSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSection.swift; sourceTree = "<group>"; };
@@ -347,10 +349,8 @@
 		2C6E44E92A0CE955009F2109 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				2CBD948C2A2F376000035252 /* Model */,
-				2CBD94892A2F352200035252 /* View */,
-				2CBD94862A2F33CD00035252 /* Reactor */,
-				2C6E44EC2A0CE96A009F2109 /* ViewController */,
+				2C7F2E962A4EB43A0071994F /* TripSetting */,
+				2C7F2E952A4EB4290071994F /* PlanTripList */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -410,6 +410,33 @@
 				2C63A3D42A1CC86700D9D998 /* CustomAnnotation.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2C7F2E952A4EB4290071994F /* PlanTripList */ = {
+			isa = PBXGroup;
+			children = (
+				2CBD948C2A2F376000035252 /* Model */,
+				2CBD94892A2F352200035252 /* View */,
+				2CBD94862A2F33CD00035252 /* Reactor */,
+				2C6E44EC2A0CE96A009F2109 /* ViewController */,
+			);
+			path = PlanTripList;
+			sourceTree = "<group>";
+		};
+		2C7F2E962A4EB43A0071994F /* TripSetting */ = {
+			isa = PBXGroup;
+			children = (
+				2C7F2E972A4EB5090071994F /* ViewController */,
+			);
+			path = TripSetting;
+			sourceTree = "<group>";
+		};
+		2C7F2E972A4EB5090071994F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2C7F2E982A4EB5220071994F /* TripSettingViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		2CBD94862A2F33CD00035252 /* Reactor */ = {
@@ -816,6 +843,7 @@
 				2C6E44DF2A0CDD90009F2109 /* LoginType.swift in Sources */,
 				2C6E44DD2A0CDD58009F2109 /* UIButton++Extenstions.swift in Sources */,
 				2CE32FC02A161E8D00BEF7A8 /* TripDetailReactor.swift in Sources */,
+				2C7F2E992A4EB5220071994F /* TripSettingViewController.swift in Sources */,
 				2CE32FBE2A161CFB00BEF7A8 /* TripDetailSection.swift in Sources */,
 				2CBD94882A2F33DE00035252 /* CalendarReactor.swift in Sources */,
 				2C6E44A82A0CD330009F2109 /* capston_inu_iOS.xcdatamodeld in Sources */,

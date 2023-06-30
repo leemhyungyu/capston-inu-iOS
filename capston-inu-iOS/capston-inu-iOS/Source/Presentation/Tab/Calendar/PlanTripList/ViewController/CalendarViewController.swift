@@ -54,12 +54,28 @@ extension CalendarViewController {
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
         
+        plusButton.rx.tap
+            .map { Reactor.Action.didTapPlusButton }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        
         // MARK: - state
         
         reactor.state
             .map { $0.section }
             .bind(to: tableView.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
+        
+        reactor.state
+            .map { $0.isPresentPlanVC }
+            .distinctUntilChanged()
+            .filter { $0 }
+            .map { _ in }
+            .bind(onNext: { [weak self] in
+                self?.presentTripSettingViewController()
+            })
+            .disposed(by: disposeBag)
+            
     }
     
     // MAKR: - configure

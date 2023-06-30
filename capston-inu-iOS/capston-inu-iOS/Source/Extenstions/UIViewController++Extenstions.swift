@@ -44,4 +44,10 @@ extension UIViewController {
         detailVC.reactor = TripDetailReactor()
         self.navigationController?.pushViewController(detailVC, animated: true)
     }
+    
+    func presentTripSettingViewController() {
+        let tripSettingVC = TripSettingViewController()
+        
+        self.navigationController?.pushViewController(tripSettingVC, animated: true)
+    }
 }
