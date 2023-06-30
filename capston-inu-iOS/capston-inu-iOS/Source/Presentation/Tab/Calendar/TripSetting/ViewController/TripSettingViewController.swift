@@ -31,6 +31,28 @@ class TripSettingViewController: UIViewController {
         return view
     }()
     
+    lazy var planDetailButton: UIButton = {
+        
+        let button = UIButton()
+        
+        var config = UIButton.Configuration.plain()
+        
+        var attributeString = AttributedString.init("세부 일정 계획하기")
+        
+        attributeString.font = .systemFont(ofSize: 16, weight: .semibold)
+        attributeString.foregroundColor = .white
+        
+        config.attributedTitle = attributeString
+        config.titleAlignment = .center
+        
+        
+        button.backgroundColor = .systemBlue
+        button.configuration = config
+        button.layer.cornerRadius = 5
+        
+        return button
+    }()
+    
     // MARK: - life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +69,8 @@ extension TripSettingViewController {
         
         [   dateView,
             tripLocationView,
-            tripNameView    ]   .forEach { view.addSubview($0) }
+            tripNameView,
+            planDetailButton  ]   .forEach { view.addSubview($0) }
         
         dateView.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide).inset(30)
@@ -65,6 +88,12 @@ extension TripSettingViewController {
             $0.top.equalTo(tripLocationView.snp.bottom).offset(15)
             $0.leading.trailing.equalToSuperview().inset(30)
             $0.height.equalTo(100)
+        }
+        
+        planDetailButton.snp.makeConstraints {
+            $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(30)
+            $0.leading.trailing.equalToSuperview().inset(30)
+            $0.height.equalTo(50)
         }
     }
 }
