@@ -1,5 +1,5 @@
 //
-//  CalendarViewController.swift
+//  PlanListViewController.swift
 //  capston-inu-iOS
 //
 //  Created by 임현규 on 2023/05/11.
@@ -12,17 +12,17 @@ import RxCocoa
 import ReactorKit
 import RxDataSources
 
-class CalendarViewController: UIViewController, View {
+class PlanListViewController: UIViewController, View {
 
     // MARK: - Properties
-    lazy var reactor = CalendarReactor()
+    lazy var reactor = PlanListReactor()
     var disposeBag: DisposeBag = DisposeBag()
-    var dataSource: RxTableViewSectionedReloadDataSource<CalendarSection>!
+    var dataSource: RxTableViewSectionedReloadDataSource<PlanListSection>!
     // MARK: - UI Component
     
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .null, style: .plain)
-        tableView.register(CalendarTableViewCell.self, forCellReuseIdentifier: CalendarTableViewCell.identifier)
+        tableView.register(PlanListTableViewCell.self, forCellReuseIdentifier: PlanListTableViewCell.identifier)
         tableView.separatorStyle = .none
         tableView.backgroundColor = .systemGray6
         return tableView
@@ -41,10 +41,10 @@ class CalendarViewController: UIViewController, View {
     }
 }
 
-extension CalendarViewController {
+extension PlanListViewController {
     
     // MARK: - bind
-    func bind(reactor: CalendarReactor) {
+    func bind(reactor: PlanListReactor) {
         configureDataSource()
         
         // MARK: - action
@@ -99,7 +99,7 @@ extension CalendarViewController {
             switch item {
             case .calendarCell(let trip):
                 
-                guard let cell = tableView.dequeueReusableCell(withIdentifier: CalendarTableViewCell.identifier, for: indexPath) as? CalendarTableViewCell else { return UITableViewCell() }
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: PlanListTableViewCell.identifier, for: indexPath) as? PlanListTableViewCell else { return UITableViewCell() }
                 
                 cell.updateCell(trip)
                 
@@ -120,7 +120,7 @@ extension CalendarViewController {
 }
 
 // MARK: - UITableViewDelegate
-extension CalendarViewController: UITableViewDelegate {
+extension PlanListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100

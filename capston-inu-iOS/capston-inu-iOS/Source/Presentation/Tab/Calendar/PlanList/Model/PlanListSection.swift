@@ -7,17 +7,17 @@
 
 import RxDataSources
 
-enum CalendarSection {
-    case calendarSection([CalendarSectionItem])
+enum PlanListSection {
+    case calendarSection([PlanListSectionItem])
 }
 
-enum CalendarSectionItem {
-    case calendarCell(TripList)
+enum PlanListSectionItem {
+    case calendarCell(PlanList)
 }
 
-extension CalendarSection: SectionModelType {
+extension PlanListSection: SectionModelType {
     
-    typealias Item = CalendarSectionItem
+    typealias Item = PlanListSectionItem
     
     var items: [Item] {
         switch self {
@@ -26,7 +26,7 @@ extension CalendarSection: SectionModelType {
         }
     }
     
-    init(original: CalendarSection, items: [CalendarSectionItem]) {
+    init(original: PlanListSection, items: [PlanListSectionItem]) {
         self = original
     }
 }

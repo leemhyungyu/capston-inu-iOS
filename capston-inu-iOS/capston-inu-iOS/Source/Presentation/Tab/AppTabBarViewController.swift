@@ -53,7 +53,7 @@ extension AppTabBarViewController {
         
         
         let calendarVC = UINavigationController(
-            rootViewController: CalendarViewController())
+            rootViewController: PlanListViewController())
         
         let photoVC = UINavigationController(
             rootViewController: PhotoViewController())

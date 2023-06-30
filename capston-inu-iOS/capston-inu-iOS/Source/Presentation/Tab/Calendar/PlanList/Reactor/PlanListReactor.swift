@@ -1,5 +1,5 @@
 //
-//  CalendarReactor.swift
+//  PlanListReactor.swift
 //  capston-inu-iOS
 //
 //  Created by 임현규 on 2023/06/06.
@@ -8,7 +8,7 @@
 import Foundation
 import ReactorKit
 
-class CalendarReactor: Reactor {
+class PlanListReactor: Reactor {
     
     var initialState: State
     
@@ -19,12 +19,12 @@ class CalendarReactor: Reactor {
     }
     
     enum Mutation {
-        case setUpSection([CalendarSection])
+        case setUpSection([PlanListSection])
         case setPresentPlanVC(Bool)
     }
     
     struct State {
-        var section: [CalendarSection] = []
+        var section: [PlanListSection] = []
         var isPresentPlanVC: Bool = false
     }
     
@@ -35,7 +35,7 @@ class CalendarReactor: Reactor {
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
         case .viewDidLoad:
-            return CalendarReactor.setUpSections()
+            return PlanListReactor.setUpSections()
             
         case .deleteItem(let indexPath):
             return .empty()
@@ -63,23 +63,23 @@ class CalendarReactor: Reactor {
     }
 }
 
-extension CalendarReactor {
+extension PlanListReactor {
     
     static func setUpSections() -> Observable<Mutation> {
         
-        var sections = [CalendarSection]()
+        var sections = [PlanListSection]()
         
-        var data: [TripList] = [
-            TripList(title: "여행 제목1", startDate: "여행 시작 일자1", endDate: "여행 종료 일자1"),
-            TripList(title: "여행 제목2", startDate: "여행 시작 일자2", endDate: "여행 종료 일자2"),
-            TripList(title: "여행 제목3", startDate: "여행 시작 일자3", endDate: "여행 종료 일자3"),
-            TripList(title: "여행 제목4", startDate: "여행 시작 일자4", endDate: "여행 종료 일자4"),
-            TripList(title: "여행 제목5", startDate: "여행 시작 일자5", endDate: "여행 종료 일자5"),
-            TripList(title: "여행 제목6", startDate: "여행 시작 일자6", endDate: "여행 종료 일자61")
+        var data: [PlanList] = [
+            PlanList(title: "여행 제목1", startDate: "여행 시작 일자1", endDate: "여행 종료 일자1"),
+            PlanList(title: "여행 제목2", startDate: "여행 시작 일자2", endDate: "여행 종료 일자2"),
+            PlanList(title: "여행 제목3", startDate: "여행 시작 일자3", endDate: "여행 종료 일자3"),
+            PlanList(title: "여행 제목4", startDate: "여행 시작 일자4", endDate: "여행 종료 일자4"),
+            PlanList(title: "여행 제목5", startDate: "여행 시작 일자5", endDate: "여행 종료 일자5"),
+            PlanList(title: "여행 제목6", startDate: "여행 시작 일자6", endDate: "여행 종료 일자61")
         ]
         
         data.forEach {
-            sections += [CalendarSection.calendarSection([CalendarSectionItem.calendarCell($0)])]
+            sections += [PlanListSection.calendarSection([PlanListSectionItem.calendarCell($0)])]
         }
         
         return .just(.setUpSection(sections))

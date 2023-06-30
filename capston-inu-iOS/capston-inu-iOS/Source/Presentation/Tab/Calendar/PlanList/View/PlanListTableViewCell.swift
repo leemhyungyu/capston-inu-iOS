@@ -1,5 +1,5 @@
 //
-//  CalendarTableViewCell.swift
+//  PlanListTableViewCell.swift
 //  capston-inu-iOS
 //
 //  Created by 임현규 on 2023/06/06.
@@ -8,10 +8,10 @@
 import Foundation
 import UIKit
 
-class CalendarTableViewCell: UITableViewCell {
+class PlanListTableViewCell: UITableViewCell {
     
     // MARK: - identifier
-    static let identifier = "CalendarTableViewCell"
+    static let identifier = "PlanListTableViewCell"
     
     // MARK: - UI Component
     
@@ -57,7 +57,7 @@ class CalendarTableViewCell: UITableViewCell {
     }
 }
 
-extension CalendarTableViewCell {
+extension PlanListTableViewCell {
     
     func configureUI() {
 
@@ -96,7 +96,7 @@ extension CalendarTableViewCell {
         }
     }
     
-    func updateCell(_ data: TripList) {
+    func updateCell(_ data: PlanList) {
         tripTitleLabel.text = data.title
         tripStartDateLabel.text = data.startDate
         tripEndDateLabel.text = data.endDate
