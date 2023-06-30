@@ -40,6 +40,7 @@
 		2C6E45052A0D28E6009F2109 /* CustomFloatingPanelLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E45042A0D28E6009F2109 /* CustomFloatingPanelLayout.swift */; };
 		2C7F2E992A4EB5220071994F /* TripSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7F2E982A4EB5220071994F /* TripSettingViewController.swift */; };
 		2C7F2E9C2A4EBB000071994F /* PlanDateVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7F2E9B2A4EBB000071994F /* PlanDateVIew.swift */; };
+		2C7F2EA02A4EC8460071994F /* PlanTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7F2E9F2A4EC8460071994F /* PlanTextFieldView.swift */; };
 		2CBD94882A2F33DE00035252 /* PlanListReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD94872A2F33DE00035252 /* PlanListReactor.swift */; };
 		2CBD948B2A2F353100035252 /* PlanListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD948A2A2F353100035252 /* PlanListTableViewCell.swift */; };
 		2CBD948E2A2F376F00035252 /* PlanListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD948D2A2F376F00035252 /* PlanListSection.swift */; };
@@ -116,6 +117,7 @@
 		2C6E45042A0D28E6009F2109 /* CustomFloatingPanelLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFloatingPanelLayout.swift; sourceTree = "<group>"; };
 		2C7F2E982A4EB5220071994F /* TripSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripSettingViewController.swift; sourceTree = "<group>"; };
 		2C7F2E9B2A4EBB000071994F /* PlanDateVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDateVIew.swift; sourceTree = "<group>"; };
+		2C7F2E9F2A4EC8460071994F /* PlanTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanTextFieldView.swift; sourceTree = "<group>"; };
 		2CBD94872A2F33DE00035252 /* PlanListReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanListReactor.swift; sourceTree = "<group>"; };
 		2CBD948A2A2F353100035252 /* PlanListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanListTableViewCell.swift; sourceTree = "<group>"; };
 		2CBD948D2A2F376F00035252 /* PlanListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanListSection.swift; sourceTree = "<group>"; };
@@ -446,6 +448,7 @@
 			isa = PBXGroup;
 			children = (
 				2C7F2E9B2A4EBB000071994F /* PlanDateVIew.swift */,
+				2C7F2E9F2A4EC8460071994F /* PlanTextFieldView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -857,6 +860,7 @@
 				2CE32FC02A161E8D00BEF7A8 /* TripDetailReactor.swift in Sources */,
 				2C7F2E992A4EB5220071994F /* TripSettingViewController.swift in Sources */,
 				2CE32FBE2A161CFB00BEF7A8 /* TripDetailSection.swift in Sources */,
+				2C7F2EA02A4EC8460071994F /* PlanTextFieldView.swift in Sources */,
 				2CBD94882A2F33DE00035252 /* PlanListReactor.swift in Sources */,
 				2C6E44A82A0CD330009F2109 /* capston_inu_iOS.xcdatamodeld in Sources */,
 				2C6E44E32A0CE601009F2109 /* UIViewController++Extenstions.swift in Sources */,
